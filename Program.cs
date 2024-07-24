@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Xml;
 namespace Collection230724
 {
     class student
@@ -45,7 +46,7 @@ namespace Collection230724
             //ArlB.Clear();
             //Console.WriteLine(ArlB.Capacity);
             //Console.WriteLine("Count = " + ArlB.Count);
-            #endregion
+
 
             //ArrayList al1=new ArrayList();
             //al1.Add(11.1);
@@ -56,54 +57,58 @@ namespace Collection230724
 
             //Console.WriteLine(al1.Contains(444.4));
 
-            ArrayList al1 = new ArrayList();
-            al1.Add("111");
-            al1.Add("333");//0
-            al1.Add("555");//1
-            al1.Add("222");//2
-            al1.Add("444");//3
-                           // al1.Insert(2,"999");//0
-                           //al1.RemoveRange(2,2);
-                           //al1.RemoveAt(0);//
-                           // al1.Reverse();
-            al1.Sort();
-            foreach (object item in al1)
-            {
-               
-                Console.WriteLine(int.Parse((string)item));
-            }
-           
+            //ArrayList al1 = new ArrayList();
+            //al1.Add("111");
+            //al1.Add("333");//0
+            //al1.Add("555");//1
+            //al1.Add("222");//2
+            //al1.Add("444");//3
+            //               // al1.Insert(2,"999");//0
+            //               //al1.RemoveRange(2,2);
+            //               //al1.RemoveAt(0);//
+            //               // al1.Reverse();
+            //al1.Sort();
+            //foreach (object item in al1)
+            //{
+
+            //    Console.WriteLine(int.Parse((string)item));
+            //}
 
 
-            Console.WriteLine(al1.Contains("kolhapur"));
-            Console.WriteLine("indexOf="+al1.IndexOf("kolhapur"));
-            #region ArrayList With Student obj
-           // ArrayList studArList = new ArrayList();
-           // student s1 = new student() { name = "rajesh", roll = 1, totalMarks = 780 };
-           // studArList.Add(s1);
-           // student s3 = new student() { roll = 3, name = "darshan", totalMarks = 888 };
-           ////short cut
-           //studArList.Add(new student() { roll = 2,name = "pavan", totalMarks = 567 });
-           // studArList.Add(s3);
-           // Console.WriteLine("capacity= "+studArList.Capacity+" count= "+studArList.Count);
 
-           // Console.WriteLine("--Student record----");
-           // for (int i = 0; i < studArList.Count; i++)
-           // {
-           //     student temp =(student) studArList[i];//1
-           //           Console.WriteLine(temp.roll+"\t"+temp.name+"\t"+temp.totalMarks);//2
-           //    // Console.WriteLine(((student)studArList[i]).roll);//1+2                
-           // }
-           // student st2 = new student() { roll = 3, name = "darshan", totalMarks = 888 };
-           // // Console.WriteLine("contains = "+studArList.Contains(st2));
-           // Console.WriteLine("contains = " + studArList.Contains(s3));
-           // Console.WriteLine("s1 hash code= "+s1.GetHashCode());
-           // Console.WriteLine("s1 hash code= " + s3.GetHashCode());
-           // for (int i = 0; i < studArList.Count; i++)
-           // {
-           //     Console.WriteLine("####hash code= " + studArList[i].GetHashCode());
-           // }
+            //Console.WriteLine(al1.Contains("kolhapur"));
+            //Console.WriteLine("indexOf="+al1.IndexOf("kolhapur"));
+            //#region ArrayList With Student obj
+            // ArrayList studArList = new ArrayList();
+            // student s1 = new student() { name = "rajesh", roll = 1, totalMarks = 780 };
+            // studArList.Add(s1);
+            // student s3 = new student() { roll = 3, name = "darshan", totalMarks = 888 };
+            ////short cut
+            //studArList.Add(new student() { roll = 2,name = "pavan", totalMarks = 567 });
+            // studArList.Add(s3);
+            // Console.WriteLine("capacity= "+studArList.Capacity+" count= "+studArList.Count);
+
+            // Console.WriteLine("--Student record----");
+            // for (int i = 0; i < studArList.Count; i++)
+            // {
+            //     student temp =(student) studArList[i];//1
+            //           Console.WriteLine(temp.roll+"\t"+temp.name+"\t"+temp.totalMarks);//2
+            //    // Console.WriteLine(((student)studArList[i]).roll);//1+2                
+            // }
+            // student st2 = new student() { roll = 3, name = "darshan", totalMarks = 888 };
+            // // Console.WriteLine("contains = "+studArList.Contains(st2));
+            // Console.WriteLine("contains = " + studArList.Contains(s3));
+            // Console.WriteLine("s1 hash code= "+s1.GetHashCode());
+            // Console.WriteLine("s1 hash code= " + s3.GetHashCode());
+            // for (int i = 0; i < studArList.Count; i++)
+            // {
+            //     Console.WriteLine("####hash code= " + studArList[i].GetHashCode());
+            // }
             #endregion
+
+            // new HashTableUse().method1();
+            new StackDemo().showStack();
+
             Console.ReadKey();
         }
     }
